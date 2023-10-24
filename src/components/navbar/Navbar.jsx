@@ -7,13 +7,24 @@ import {
   FaSquareXTwitter,
   FaSquareYoutube,
 } from "react-icons/fa6";
+import { motion } from "framer-motion";
+import Sidebar from "../sidebar/Sidebar";
 
 function Navbar() {
   return (
     <div className="navbar">
       {/* Sidebar */}
+      <Sidebar />
+
       <div className="wrapper">
-        <span>Jacob Adebayo</span>
+        <motion.span
+          initial={{ opacity: 0, scale: 0.4 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          Jacob Adebayo
+        </motion.span>
+
         <div className="social">
           <a href="#">
             <IconContext.Provider value={{ color: "#3b5998" }}>
