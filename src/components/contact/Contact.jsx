@@ -38,7 +38,7 @@ function Contact() {
         </motion.div>
         <motion.div variants={variants} className="item">
           <h2>Loaction</h2>
-          <span>Lagos, Nigeria.</span>
+          <span>Remote</span>
         </motion.div>
         <motion.div variants={variants} className="item">
           <h2>Mobile</h2>
@@ -57,7 +57,6 @@ function Contact() {
               strokeWidth={0.2}
               fill="none"
               initial={{ pathLength: 0 }}
-              //   whileInView={{ pathLength: 1 }}
               animate={isInView && { pathLength: 1 }}
               transition={{ duration: 3 }}
               d="M28.189,16.504h-1.666c0-5.437-4.422-9.858-9.856-9.858l-0.001-1.664C23.021,4.979,28.189,10.149,28.189,16.504z

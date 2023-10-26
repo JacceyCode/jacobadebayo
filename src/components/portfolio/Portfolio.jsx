@@ -6,21 +6,21 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "React Commerce",
-    img: "https://images.pexels.com/photos/18758952/pexels-photo-18758952/free-photo-of-a-woman-in-a-leather-jacket-is-walking-down-an-escalator.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima doloribus odit id ipsum veritatis, ab excepturi nesciunt optio iusto numquam modi, amet praesentium tempore voluptatibus fugiat rerum ratione enim quisquam.",
+    title: " My MovieBox",
+    img: "./moviebox.png",
+    desc: "A product for watching trailer's and checking reviews of popular movies with a search functionality to search for any movie of choice. The TMDB API was used to fetch the movie details using the CRUD method for RESTful API.",
   },
   {
     id: 2,
-    title: "React Play",
-    img: "https://images.pexels.com/photos/18722962/pexels-photo-18722962/free-photo-of-a-camel-pulling-a-cart-with-a-red-canopy.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima doloribus odit id ipsum veritatis, ab excepturi nesciunt optio iusto numquam modi, amet praesentium tempore voluptatibus fugiat rerum ratione enim quisquam.",
+    title: "The Wild-Oasis Management App",
+    img: "./aosis.png",
+    desc: "A desktop customer booking and management app for a resort house to track customers logdement, arrivals & departures.",
   },
   {
     id: 3,
-    title: "React Js",
-    img: "https://images.pexels.com/photos/5520957/pexels-photo-5520957.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima doloribus odit id ipsum veritatis, ab excepturi nesciunt optio iusto numquam modi, amet praesentium tempore voluptatibus fugiat rerum ratione enim quisquam.",
+    title: "Image Gallery with Drag&Drop",
+    img: "./drag&drop.png",
+    desc: "An image gallery with the drag&drop feature, user unthentication and search functionality which is accessible to unthenticated user's only.",
   },
   {
     id: 4,
@@ -35,10 +35,9 @@ const Single = ({ item }) => {
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    // offset: ["start start", "end start"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [-500, 500]);
+  const y = useTransform(scrollYProgress, [0, 1], [300, -300]);
 
   return (
     <section>
@@ -51,7 +50,9 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See demo</button>
+            <a href="https://mymoviebox-jacceycode.netlify.app/" target="blank">
+              Check App
+            </a>
           </motion.div>
         </div>
       </div>
