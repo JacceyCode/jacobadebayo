@@ -42,6 +42,7 @@ function Services() {
         </p>
         <hr />
       </motion.div>
+
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
           <img src="./people.webp" alt="people" />
@@ -57,6 +58,7 @@ function Services() {
           <button>WHAT I DO...</button>
         </div>
       </motion.div>
+
       <motion.div className="listContainer" variants={variants}>
         <motion.div
           className="box"

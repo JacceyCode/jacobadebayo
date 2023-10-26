@@ -42,6 +42,10 @@ function Hero() {
   return (
     <div className="hero">
       <div className="wrapper">
+        <div className="imageContainer">
+          <img src="./myImage.png" alt="Jacob" />
+        </div>
+
         <motion.div
           className="textContainer"
           variants={textVariants}
@@ -51,13 +55,16 @@ function Hero() {
           <motion.h2 variants={textVariants}>
             JACOB OLUWASESAN ADEBAYO
           </motion.h2>
-          <motion.h1 variants={textVariants}>Frontend Developer</motion.h1>
+          <motion.h1 variants={textVariants}>Frontend Developer...</motion.h1>
+
           <motion.div className="buttons" variants={textVariants}>
             <motion.button variants={textVariants}>
-              See the latest works
+              See my latest works
             </motion.button>
             <motion.button variants={textVariants}>Contact Me</motion.button>
+            <motion.button variants={textVariants}>See my Resume</motion.button>
           </motion.div>
+
           <motion.img
             variants={textVariants}
             animate="scrollButton"
@@ -66,6 +73,7 @@ function Hero() {
           />
         </motion.div>
       </div>
+
       <motion.div
         className="slidingTextContainer"
         variants={sliderVariants}
@@ -74,9 +82,6 @@ function Hero() {
       >
         Frontend Developer
       </motion.div>
-      <div className="imageContainer">
-        <img src="./hero.png" alt="hero" />
-      </div>
     </div>
   );
 }
