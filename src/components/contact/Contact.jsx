@@ -47,6 +47,7 @@ function Contact() {
           <span>Remote</span>
         </motion.div>
       </motion.div>
+
       <div className="formContainer">
         <motion.div
           className="phoneSvg"
@@ -54,7 +55,7 @@ function Contact() {
           whileInView={{ opacity: 0 }}
           transition={{ duration: 1, delay: 3 }}
         >
-          <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
+          <svg width="370px" height="370px" viewBox="0 0 32.666 32.666">
             <motion.path
               strokeWidth={0.2}
               fill="none"
