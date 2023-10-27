@@ -13,15 +13,36 @@
     width: 100%;
 
     @include mobile {
-      justify-content: flex-end;
+      flex-direction: column;
+      justify-content: center;
+      align-items: end;
+      gap: 10px;
       padding: 20px;
     }
 
-    span {
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 20px;
       font-weight: bold;
 
       @include mobile {
-        display: none;
+        justify-content: end;
+        width: 100%;
+      }
+
+      span {
+        @include mobile {
+          display: none;
+        }
+      }
+
+      a {
+        padding: 5px;
+        border: 1px solid orange;
+        border-radius: 10px;
+        background-color: transparent;
+        color: orange;
       }
     }
 

@@ -43,7 +43,7 @@ function Hero() {
     <div className="hero">
       <div className="wrapper">
         <div className="imageContainer">
-          <img src="./myImage.png" alt="Jacob" />
+          <img src="/myImage.png" alt="Jacob" />
         </div>
 
         <motion.div
@@ -55,14 +55,14 @@ function Hero() {
           <motion.h2 variants={textVariants}>
             JACOB OLUWASESAN ADEBAYO
           </motion.h2>
+
           <motion.h1 variants={textVariants}>Frontend Developer...</motion.h1>
 
-          <motion.div className="buttons" variants={textVariants}>
-            <motion.button variants={textVariants}>
-              See my latest works
-            </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
-            <motion.button variants={textVariants}>See my Resume</motion.button>
+          <motion.div className="about" variants={textVariants}>
+            A creative and enthusiastic web developer with excellent skills in
+            developing ideas into a functional, responsive and design-detailed
+            websites. <br /> With genuine passion and dedication to my craft, I
+            deliver exceptional results.
           </motion.div>
 
           <motion.img

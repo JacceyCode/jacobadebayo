@@ -6,10 +6,6 @@
   background: linear-gradient(180deg, #0c0c1d, #111132);
   position: relative;
 
-  // @include mobile {
-  //   overflow: auto;
-  // }
-
   .wrapper {
     max-width: 1366px;
     height: 100%;
@@ -55,17 +51,14 @@
         }
       }
 
-      .buttons {
-        button {
-          padding: 20px;
-          border: 1px solid white;
-          border-radius: 10px;
-          background-color: transparent;
-          color: white;
-          margin-right: 20px;
-          margin-bottom: 10px;
-          font-weight: 300;
-          cursor: pointer;
+      .about {
+        color: gray;
+        font-size: 24px;
+        width: 70%;
+
+        @include mobile {
+          width: 100%;
+          font-size: 18px;
         }
       }
 
