@@ -36,13 +36,15 @@ function Contact() {
           <h2>Mail</h2>
           <span>jacobadebayo.ja@gmail.com</span>
         </motion.div>
-        <motion.div variants={variants} className="item">
-          <h2>Loaction</h2>
-          <span>Remote</span>
-        </motion.div>
+
         <motion.div variants={variants} className="item">
           <h2>Mobile</h2>
           <span>+234 813 455 7536</span>
+        </motion.div>
+
+        <motion.div variants={variants} className="item">
+          <h2>Loaction</h2>
+          <span>Remote</span>
         </motion.div>
       </motion.div>
       <div className="formContainer">

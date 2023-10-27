@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import "./app.scss";
 import Contact from "./components/contact/Contact";
 import Cursor from "./components/cursor/Cursor";
@@ -19,6 +20,7 @@ function App() {
       <section id="Services">
         <Parallax type="services" />
       </section>
+
       <section>
         <Services />
       </section>
@@ -26,7 +28,9 @@ function App() {
       <section id="Portfolio">
         <Parallax type="portfolio" />
       </section>
+
       <Portfolio />
+
       <section id="Contact">
         <Contact />
       </section>

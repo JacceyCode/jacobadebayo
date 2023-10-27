@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useRef } from "react";
 import "./services.scss";
 import { motion, useInView } from "framer-motion";
@@ -30,10 +31,10 @@ function Services() {
       className="services"
       variants={variants}
       initial="initial"
-      //   animate="animate"
+      animate="animate"
       //   whileInView="animate"
       ref={ref}
-      animate={isInView && "animate"}
+      // animate={isInView && "animate"}
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
