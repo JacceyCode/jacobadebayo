@@ -5,10 +5,14 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  // justify-content: space-between;
+  overflow: auto;
+  padding: 10px;
+  max-width: 1366px;
+  margin: auto;
+  gap: 30px;
 
   .textContainer {
-    flex: 1;
     align-self: flex-end;
     display: flex;
     align-items: center;
@@ -22,7 +26,7 @@
 
     p {
       font-weight: 200;
-      font-size: 20px;
+      font-size: 22px;
       color: gray;
       text-align: right;
     }
@@ -39,10 +43,11 @@
   }
 
   .titleContainer {
-    flex: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1366px;
+    margin: auto;
 
     @include mobile {
       width: 100%;
@@ -51,99 +56,158 @@
     .title {
       display: flex;
       align-items: center;
-      gap: 50px;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 5px 10px;
 
       @include mobile {
         flex-direction: column;
         text-align: center;
-        gap: 20px;
-      }
-
-      img {
-        width: 300px;
-        height: 100px;
-        border-radius: 50px;
-        object-fit: cover;
-
-        @include mobile {
-          width: 200px;
-          height: 50px;
-        }
+        gap: 10px;
       }
 
       h1 {
-        font-size: 96px;
+        font-size: 52px;
         font-weight: 100;
+        font-style: italic;
+        text-align: center;
 
         @include mobile {
           font-size: 36px;
         }
       }
 
-      button {
-        width: 300px;
-        height: 100px;
+      a {
         border-radius: 50px;
         background-color: orange;
+        color: black;
         border: none;
         font-size: 24px;
         cursor: pointer;
+        padding: 10px;
+      }
 
-        @include mobile {
-          font-size: 16px;
-          width: 150px;
-          height: 50px;
-        }
+      a:hover {
+        background-color: transparent;
+        border: 1px solid orange;
+        color: orange;
       }
     }
   }
 
   .listContainer {
-    flex: 2;
     display: flex;
     max-width: 1366px;
     margin: auto;
+    gap: 40px;
 
     @include mobile {
       flex-direction: column;
       width: 100%;
     }
 
-    .box {
-      padding: 50px;
-      border: 0.5px solid gray;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+    .box:nth-child(2) {
+      border-left: 2px solid gray;
 
       @include mobile {
         border: none;
+      }
+    }
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+      width: 50%;
+      padding: 10px 20px;
+
+      @include mobile {
         align-items: center;
-        gap: 20px;
-        padding: 10px;
+        width: 100%;
       }
 
-      p {
+      h2 {
+        color: orange;
+        font-size: 54px;
+        font-style: italic;
+        letter-spacing: 5px;
+        border-bottom: 2px solid gray;
+
         @include mobile {
-          display: none;
+          font-size: 36px;
         }
       }
 
-      button {
-        padding: 10px;
-        background-color: orange;
-        border: none;
-        cursor: pointer;
+      ul {
+        list-style: none;
+        display: flex;
+        align-items: start;
+        flex-wrap: wrap;
+        gap: 20px;
+        font-size: 42px;
+        justify-content: space-between;
 
         @include mobile {
-          background-color: transparent;
-          border: 1px solid orange;
+          gap: 7px;
+          font-size: 24px;
+          width: 100%;
+        }
+
+        li {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 5px 10px;
+          color: gray;
+          border-radius: 20px;
+          border-left: 2px solid gray;
+          border-right: 2px solid gray;
+
+          @include mobile {
+            border-radius: 10px;
+          }
+        }
+
+        li:hover {
           color: orange;
-          border-radius: 5px;
-          width: 50%;
-          padding: 5px;
+          border-color: orange;
+          transform: translateY(-15px);
+          transition: all;
+          transition-duration: 300ms;
+          transition-timing-function: linear;
+          cursor: pointer;
+        }
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        p {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          color: gray;
+          font-size: 32px;
+          text-align: justify;
+
+          @include mobile {
+            font-size: 24px;
+            align-items: start;
+          }
+        }
+
+        p:hover {
+          color: orange;
+          cursor: pointer;
         }
       }
     }
+  }
+
+  hr {
+    background-color: lightgray;
   }
 }

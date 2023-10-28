@@ -12,6 +12,7 @@ function App() {
   return (
     <main>
       <Cursor />
+
       <section id="Homepage">
         <Navbar />
         <Hero />

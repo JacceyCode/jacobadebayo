@@ -52,7 +52,7 @@ function Navbar() {
             </IconContext.Provider>
           </a>
 
-          {/* <a href="#">
+          {/* <a href="https://github.com/JacceyCode" target="blank">
             <IconContext.Provider value={{ color: "#fff", size: "2rem" }}>
               <FaSquareGithub />
             </IconContext.Provider>
