@@ -44,10 +44,14 @@
       }
 
       h1 {
-        font-size: 88px;
+        font-size: 70px;
+        color: rebeccapurple;
+        font-style: italic;
+        font-family: monospace;
+        font-weight: 500;
 
         @include mobile {
-          font-size: 36px;
+          font-size: 30px;
         }
       }
 

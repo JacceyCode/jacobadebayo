@@ -1,5 +1,7 @@
+import { useEffect, useRef } from "react";
 import "./hero.scss";
 import { motion } from "framer-motion";
+import Typed from "typed.js";
 
 const textVariants = {
   initial: {
@@ -39,6 +41,29 @@ const sliderVariants = {
 };
 
 function Hero() {
+  const el = useRef();
+
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: [
+        "Frontend Developer...",
+        "Software Developer...",
+        "Web Developer...",
+      ],
+      startDelay: 500,
+      typeSpeed: 50,
+      backSpeed: 100,
+      backDelay: 100,
+      smartBackspace: true,
+      loop: true,
+      showCursor: false,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <div className="hero">
       <div className="wrapper">
@@ -56,7 +81,9 @@ function Hero() {
             JACOB OLUWASESAN ADEBAYO
           </motion.h2>
 
-          <motion.h1 variants={textVariants}>Frontend Developer...</motion.h1>
+          <motion.h1 ref={el} variants={textVariants}>
+            Frontend Developer...
+          </motion.h1>
 
           <motion.div className="about" variants={textVariants}>
             A creative and enthusiastic web developer with excellent skills in
