@@ -27,10 +27,9 @@ main {
 
   section {
     height: 100vh;
-    // side scroll problem was here
     width: 100%;
     scroll-snap-align: center;
-    overflow: hidden;
+    overflow: auto;
   }
 }
 
@@ -41,12 +40,13 @@ main {
 }
 
 @mixin tablet {
-  @media (max-width: 1024px) {
+  @media (min-width: 739px) and (max-width: 1023px) {
     @content;
   }
 }
+
 @mixin desktop {
-  @media (max-width: 1366px) {
+  @media (min-width: 1024px) {
     @content;
   }
 }

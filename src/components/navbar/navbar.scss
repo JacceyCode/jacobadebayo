@@ -10,7 +10,7 @@
     justify-content: space-between;
     height: 100%;
     width: 100%;
-    padding: 0 20px;
+    padding: 0 20px 0 100px;
 
     @include mobile {
       flex-direction: column;
@@ -33,6 +33,10 @@
 
       span {
         @include mobile {
+          display: none;
+        }
+
+        @include tablet {
           display: none;
         }
       }

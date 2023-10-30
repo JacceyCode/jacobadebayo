@@ -17,6 +17,12 @@
       justify-content: start;
     }
 
+    @include tablet {
+      flex-direction: column-reverse;
+      justify-content: start;
+      padding: 10px 0 0;
+    }
+
     .textContainer {
       height: 100%;
       width: 70%;
@@ -30,7 +36,14 @@
         height: 55%;
         gap: 10px;
         align-items: center;
-        justify-content: start;
+        text-align: center;
+      }
+
+      @include tablet {
+        width: 100%;
+        height: 55%;
+        gap: 10px;
+        align-items: center;
         text-align: center;
       }
 
@@ -40,6 +53,10 @@
         font-style: italic;
         font-family: monospace;
         letter-spacing: 12px;
+
+        @include tablet {
+          letter-spacing: 8px;
+        }
       }
 
       h1 {
@@ -52,11 +69,14 @@
         @include mobile {
           font-size: 30px;
         }
+        @include tablet {
+          font-size: 32px;
+        }
       }
 
       .about {
         color: gray;
-        font-size: 24px;
+        font-size: 28px;
         width: 70%;
 
         @include mobile {
