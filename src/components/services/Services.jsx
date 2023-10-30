@@ -102,6 +102,9 @@ function Services() {
               <FaArrowRightLong /> Optimized and Functional product.
             </p>
             <p>
+              <FaArrowRightLong /> Building of reusable components.
+            </p>
+            <p>
               <FaArrowRightLong /> Problem solving and Debugging skills.
             </p>
             <p>

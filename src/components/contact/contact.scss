@@ -2,11 +2,9 @@
 
 .contact {
   height: 100%;
-  max-width: 1366px;
-  margin: auto;
   display: flex;
   align-items: center;
-  gap: 50px;
+  padding: 0 50px;
 
   @include mobile {
     width: 100%;
@@ -21,9 +19,8 @@
     gap: 40px;
 
     @include mobile {
-      gap: 10px;
-      text-align: center;
-      align-items: center;
+      gap: 20px;
+      align-items: start;
       margin-top: 50px;
     }
 
@@ -37,8 +34,24 @@
       }
     }
 
-    span {
-      font-weight: 300;
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .icon {
+        font-size: 30px;
+        color: orange;
+      }
+
+      span {
+        font-size: 20px;
+        letter-spacing: 5px;
+
+        @include mobile {
+          letter-spacing: 0;
+        }
+      }
     }
   }
 
@@ -90,12 +103,18 @@
         cursor: pointer;
         font-weight: 500;
         font-size: 30px;
-        border-radius: 5px;
+        border-radius: 10px;
 
         @include mobile {
           padding: 10px;
           font-size: 16px;
         }
+      }
+
+      button:hover {
+        color: orange;
+        background-color: transparent;
+        border: 2px solid orange;
       }
     }
   }

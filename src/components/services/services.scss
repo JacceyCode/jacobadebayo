@@ -5,11 +5,8 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
   overflow: auto;
-  padding: 10px;
-  max-width: 1366px;
-  margin: auto;
+  padding: 30px 0;
   gap: 30px;
 
   .textContainer {
@@ -34,7 +31,7 @@
     hr {
       width: 500px;
       border: none;
-      border-top: 0.5px solid gray;
+      border-top: 0.5px solid rebeccapurple;
 
       @include mobile {
         width: 300px;
@@ -44,10 +41,8 @@
 
   .titleContainer {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    max-width: 1366px;
-    margin: auto;
+    justify-content: center;
 
     @include mobile {
       width: 100%;
@@ -56,14 +51,11 @@
     .title {
       display: flex;
       align-items: center;
-      justify-content: space-between;
       gap: 20px;
-      padding: 5px 10px;
 
       @include mobile {
         flex-direction: column;
-        text-align: center;
-        gap: 10px;
+        padding: 0 10px;
       }
 
       h1 {
@@ -97,9 +89,7 @@
 
   .listContainer {
     display: flex;
-    max-width: 1366px;
-    margin: auto;
-    gap: 40px;
+    gap: 50px;
 
     @include mobile {
       flex-direction: column;
@@ -118,8 +108,8 @@
       display: flex;
       flex-direction: column;
       align-items: start;
-      gap: 20px;
-      width: 50%;
+      gap: 40px;
+      width: 48%;
       padding: 10px 20px;
 
       @include mobile {

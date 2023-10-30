@@ -1,6 +1,8 @@
 import { useRef } from "react";
 import "./contact.scss";
 import { motion, useInView } from "framer-motion";
+import { FaLocationDot, FaPhone } from "react-icons/fa6";
+import { MdOutlineMarkEmailRead } from "react-icons/md";
 
 const variants = {
   initial: {
@@ -32,19 +34,35 @@ function Contact() {
     >
       <motion.div className="textContainer" variants={variants}>
         <motion.h1 variants={variants}>{`Let's work together`}</motion.h1>
+
         <motion.div variants={variants} className="item">
-          <h2>Mail</h2>
-          <span>jacobadebayo.ja@gmail.com</span>
+          <span className="icon">
+            <MdOutlineMarkEmailRead />
+          </span>
+          <div>
+            <h2>Mail</h2>
+            <span>jacobadebayo.ja@gmail.com</span>
+          </div>
         </motion.div>
 
         <motion.div variants={variants} className="item">
-          <h2>Mobile</h2>
-          <span>+234 813 455 7536</span>
+          <span className="icon">
+            <FaPhone />
+          </span>
+          <div>
+            <h2>Mobile</h2>
+            <span>+234 813 455 7536</span>
+          </div>
         </motion.div>
 
         <motion.div variants={variants} className="item">
-          <h2>Loaction</h2>
-          <span>Remote</span>
+          <span className="icon">
+            <FaLocationDot />
+          </span>
+          <div>
+            <h2>Location</h2>
+            <span>Remote</span>
+          </div>
         </motion.div>
       </motion.div>
 

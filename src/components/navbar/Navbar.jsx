@@ -56,7 +56,7 @@ function Navbar() {
             <IconContext.Provider value={{ color: "#fff", size: "2rem" }}>
               <FaSquareGithub />
             </IconContext.Provider>
-          </a> */}
+            </a> */}
         </div>
       </div>
     </div>

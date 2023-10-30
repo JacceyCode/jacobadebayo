@@ -28,10 +28,10 @@ const textVariants = {
 
 const sliderVariants = {
   initial: {
-    x: 0,
+    x: 10,
   },
   animate: {
-    x: "-220%",
+    x: "-350%",
     transition: {
       duration: 10,
       repeat: Infinity,
