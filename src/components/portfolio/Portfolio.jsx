@@ -84,6 +84,7 @@ function Portfolio() {
         <h1>Featured Works</h1>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
+
       {items.map((item) => (
         <Single item={item} key={item.id} />
       ))}
