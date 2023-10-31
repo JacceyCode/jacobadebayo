@@ -79,10 +79,12 @@
         color: gray;
         font-size: 28px;
         width: 70%;
+        text-align: justify;
 
         @include mobile {
           width: 100%;
           font-size: 18px;
+          padding: 0 10px;
         }
       }
 
