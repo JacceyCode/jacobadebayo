@@ -7,8 +7,7 @@
   flex-direction: column;
   justify-content: space-between;
   overflow: auto;
-  padding: 30px 0;
-  gap: 30px;
+  padding: 20px 0;
 
   .textContainer {
     align-self: flex-end;
@@ -103,6 +102,7 @@
   .listContainer {
     display: flex;
     gap: 50px;
+    padding-bottom: 20px;
 
     @include mobile {
       flex-direction: column;
