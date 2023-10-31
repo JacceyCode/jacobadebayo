@@ -37,7 +37,7 @@
         gap: 10px;
         align-items: center;
         text-align: center;
-        padding-top: 30px;
+        // padding-top: 30px;
       }
 
       @include tablet {
@@ -55,6 +55,11 @@
         font-family: monospace;
         letter-spacing: 12px;
         padding-top: 10px;
+
+        @include mobile {
+          font-size: 30px;
+          padding-top: 50px;
+        }
 
         @include tablet {
           letter-spacing: 8px;
@@ -91,6 +96,11 @@
 
       img {
         width: 50px;
+
+        @include mobile {
+          align-self: end;
+          margin-right: 10px;
+        }
       }
     }
 
