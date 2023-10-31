@@ -8,29 +8,25 @@ const items = [
     id: 1,
     title: " My MovieBox",
     img: "./moviebox.png",
-    desc: "A product for watching trailer's and checking reviews of popular movies with a search functionality to search for any movie of choice. The TMDB API was used to fetch the movie details using the CRUD method for RESTful API.",
+    desc: "Checkout the latest movie on everyone's lips from here. Also see the latest trends and upcomings in the movie world. Explore our large movie catalogue database for your favourite movie, check the reviews and have a sneak peek of the trailer before visiting your favourite cinema.",
+    stacks: ["React", "TailwindCss", "API Integration"],
     url: "https://mymoviebox-jacceycode.netlify.app/",
   },
   {
     id: 2,
     title: "The Wild-Oasis Management App",
     img: "./aosis.png",
-    desc: "A desktop customer booking and management app for a resort house to track customers logdement, arrivals & departures.",
+    desc: "Every customer is a priority. With this app, we know when and how to welcome our costumer's, make them have a wonderful stay, wish them goodbye in a way they will want to visit again. With a glance on the dashboard, we have every customer's details and preferrences at the tip of our fingers.",
+    stacks: ["React", "Styled Components", "Recharts", "Supabase"],
     url: "https://the-wild-oasis-vacation-house.netlify.app/",
   },
   {
     id: 3,
     title: "Image Gallery with Drag&Drop",
     img: "./drag&drop.png",
-    desc: "An image gallery with the drag&drop feature, user unthentication and search functionality which is accessible to unthenticated user's only.",
+    desc: "You want to experience a gallery that gives you access to order your pictures like you always wanted or immediately search out your party or hangout pictures? Give this a try today.",
+    stacks: ["React", "TailwindCss", "Drag&Drop", "Supabase"],
     url: "https://myimageagallery.netlify.app/",
-  },
-  {
-    id: 4,
-    title: "React Redux",
-    img: "https://images.pexels.com/photos/18661408/pexels-photo-18661408/free-photo-of-man-riding-a-bike-by-the-shore.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima doloribus odit id ipsum veritatis, ab excepturi nesciunt optio iusto numquam modi, amet praesentium tempore voluptatibus fugiat rerum ratione enim quisquam.",
-    url: "https://mymoviebox-jacceycode.netlify.app/",
   },
 ];
 
@@ -54,6 +50,11 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
+            <hr />
+            <div className="stack">
+              <h4>Stacks used:</h4>
+              <span>{item.stacks?.join(", ")}</span>
+            </div>
             <a href={item.url} target="blank">
               Check App
             </a>

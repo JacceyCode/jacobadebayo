@@ -47,8 +47,8 @@ function Hero() {
     const typed = new Typed(el.current, {
       strings: [
         "Frontend Developer...",
-        "Software Developer...",
         "Web Developer...",
+        "Software Developer...",
       ],
       startDelay: 500,
       typeSpeed: 50,

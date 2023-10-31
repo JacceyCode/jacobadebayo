@@ -2,13 +2,14 @@
 
 .contact {
   height: 100%;
+  // width: 100%;
   display: flex;
   align-items: center;
   padding: 10px 50px;
 
   @include mobile {
     width: 100%;
-    padding: 50px 10px;
+    padding: 40px 0px;
     flex-direction: column;
   }
 
@@ -74,7 +75,7 @@
 
     @include mobile {
       width: 100%;
-      padding: 50px;
+      padding: 20px;
     }
     @include tablet {
       width: 100%;
@@ -88,10 +89,13 @@
       z-index: -1;
 
       @include mobile {
-        width: 100%;
         left: 0;
-        bottom: 70px;
+        // bottom: 70px;
         padding: 10px;
+      }
+
+      @include tablet {
+        left: 200px;
       }
     }
 
@@ -100,12 +104,14 @@
       flex-direction: column;
       gap: 20px;
       width: 100%;
+      padding: 0 40px;
 
       input,
       textarea {
         padding: 20px;
         background-color: transparent;
         border: 1px solid white;
+        outline: none;
         color: white;
         border-radius: 5px;
 
