@@ -13,12 +13,14 @@
     font-size: 36px;
 
     @include mobile {
-      padding-top: calc(100vh - 30px);
+      // padding-top: calc(100vh - 30px);
+      padding-top: 0;
       font-size: 24px;
     }
 
     @include tablet {
-      padding-top: calc(100vh - 100px);
+      // padding-top: calc(100vh - 100px);
+      padding-top: 0;
       font-size: 24px;
     }
 
@@ -34,6 +36,10 @@
 
       @include mobile {
         height: 2px;
+      }
+
+      @include tablet {
+        height: 3px;
       }
     }
   }
@@ -56,14 +62,14 @@
 
       @include mobile {
         flex-direction: column;
-        gap: 10px;
-        padding: 20px 10px 0;
+        gap: 0px;
+        padding: 50px 10px 0;
       }
 
       @include tablet {
         flex-direction: column;
         gap: 10px;
-        padding: 50px 10px 0;
+        padding: 100px 10px 0;
       }
 
       .imageContainer {
