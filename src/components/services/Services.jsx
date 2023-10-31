@@ -66,7 +66,7 @@ function Services() {
               <FaCss3Alt /> CSS3
             </li>
             <li>
-              <FaSass /> SASS
+              <FaSass /> SCSS
             </li>
             <li>
               <BiLogoTailwindCss /> Tailwind CSS
