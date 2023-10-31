@@ -218,3 +218,16 @@
     background-color: lightgray;
   }
 }
+
+// To hide the side scroll-bar
+
+// For Chrome, Safari and Opera
+.services::-webkit-scrollbar {
+  display: none;
+}
+
+// For IE, Edge and Firefox
+.services {
+  -ms-overflow-style: none; // IE and Edge
+  scrollbar-width: none; //Firefox
+}
