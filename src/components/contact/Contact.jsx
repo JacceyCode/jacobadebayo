@@ -104,7 +104,7 @@ function Contact() {
         >
           <input type="text" placeholder="Name" required />
           <input type="email" placeholder="Email" required />
-          <textarea rows={10} placeholder="Message" />
+          <textarea rows={10} placeholder="Message" required />
           <button>Send</button>
         </motion.form>
       </div>
