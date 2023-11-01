@@ -22,7 +22,7 @@ const items = [
   },
   {
     id: 3,
-    title: "Image Gallery with Drag&Drop",
+    title: "Image Gallery",
     img: "./drag&drop.png",
     desc: "You want to experience a gallery that gives you access to order your pictures like you always wanted or immediately search out your party or hangout pictures? Give this a try today.",
     stacks: ["React", "TailwindCss", "Drag&Drop", "Supabase"],
@@ -30,7 +30,7 @@ const items = [
   },
   {
     id: 4,
-    title: "Inspiration Quote Generator",
+    title: "Inspirational Quote Generator",
     img: "./randomQuotes.png",
     desc: "An app for generating inspirational quotes and sharing on social media profile.",
     stacks: ["HTML", "CSS", "JAVASCRIPT", "API Integration"],
