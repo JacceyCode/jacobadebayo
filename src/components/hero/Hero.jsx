@@ -89,7 +89,7 @@ function Hero() {
             A creative and enthusiastic web developer with excellent skills in
             developing ideas into a functional, responsive and design-detailed
             websites. <br /> With genuine passion and dedication to my craft, I
-            deliver exceptional results.
+            build user interfaces with seamless navigation and functiionality.
           </motion.div>
 
           <motion.img
