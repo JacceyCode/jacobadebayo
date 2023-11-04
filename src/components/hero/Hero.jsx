@@ -31,9 +31,9 @@ const sliderVariants = {
     x: 10,
   },
   animate: {
-    x: "-350%",
+    x: "-90%",
     transition: {
-      duration: 10,
+      duration: 5,
       repeat: Infinity,
       repeatType: "mirror",
     },
@@ -44,7 +44,7 @@ function Hero() {
   const el = useRef();
 
   useEffect(() => {
-    const typed = new Typed(el.current, {
+    var typed = new Typed(el.current, {
       strings: [
         "Frontend Developer...",
         "Web Developer...",
@@ -56,7 +56,8 @@ function Hero() {
       backDelay: 100,
       smartBackspace: true,
       loop: true,
-      showCursor: false,
+      showCursor: true,
+      cursorChar: "!",
     });
 
     return () => {
@@ -67,9 +68,9 @@ function Hero() {
   return (
     <div className="hero">
       <div className="wrapper">
-        <div className="imageContainer">
+        {/* <div className="imageContainer">
           <img src="/myImage.png" alt="Jacob" />
-        </div>
+        </div> */}
 
         <motion.div
           className="textContainer"
@@ -81,8 +82,8 @@ function Hero() {
             JACOB OLUWASESAN ADEBAYO
           </motion.h2>
 
-          <motion.h1 ref={el} variants={textVariants}>
-            Frontend Developer...
+          <motion.h1 variants={textVariants}>
+            <span ref={el}> </span>
           </motion.h1>
 
           <motion.div className="about" variants={textVariants}>
