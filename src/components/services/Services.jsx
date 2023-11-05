@@ -75,7 +75,7 @@ function Services() {
               <BiLogoJavascript /> JavaScript
             </li>
             <li>
-              <FaReact /> React.js
+              <FaReact /> React
             </li>
             <li>
               <BiLogoRedux /> Redux
