@@ -69,7 +69,7 @@ function Services() {
               <FaSass /> SCSS
             </li>
             <li>
-              <BiLogoTailwindCss /> Tailwind CSS
+              <BiLogoTailwindCss /> TailwindCSS
             </li>
             <li>
               <BiLogoJavascript /> JavaScript
@@ -78,7 +78,7 @@ function Services() {
               <FaReact /> React.js
             </li>
             <li>
-              <BiLogoRedux /> Redux (RTK)
+              <BiLogoRedux /> Redux
             </li>
             <li>
               <FaGitAlt /> Git & Github

@@ -13,20 +13,18 @@
     font-size: 36px;
 
     @include mobile {
-      // padding-top: calc(100vh - 30px);
-      padding-top: 0;
-      font-size: 24px;
+      padding-top: 15px;
+      font-size: 22px;
     }
 
     @include tablet {
-      // padding-top: calc(100vh - 100px);
-      padding-top: 0;
+      padding-top: 30px;
       font-size: 24px;
     }
 
     h1 {
       @include mobile {
-        font-size: 22px;
+        font-size: 28px;
       }
     }
 
@@ -49,13 +47,33 @@
     // scroll-snap-align: center;
     overflow: auto;
 
+    @include mobile {
+      height: 100%;
+    }
+
+    @include tablet {
+      height: 100%;
+    }
+
     .container {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 100%;
-      height: 100%;
       overflow: hidden;
+      margin: 50px 0;
+
+      @include mobile {
+        width: 90%;
+        margin: 20px auto;
+        border-bottom: 2px solid gray;
+      }
+
+      @include tablet {
+        width: 90%;
+        margin: 40px auto;
+        border-bottom: 2px solid gray;
+      }
 
       .wrapper {
         height: 100%;
@@ -63,18 +81,18 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 50px;
+        gap: 20px;
 
         @include mobile {
           flex-direction: column;
           gap: 0px;
-          padding: 50px 10px 0;
+          padding: 40px 10px;
         }
 
         @include tablet {
           flex-direction: column;
-          gap: 10px;
-          padding: 100px 10px 0;
+          gap: 0px;
+          padding: 30px 10px;
         }
 
         .imageContainer {
@@ -83,19 +101,16 @@
 
           @include mobile {
             width: 100%;
-            max-height: 250px;
           }
 
           @include tablet {
             width: 100%;
-            max-height: 350px;
           }
 
           img {
             width: 100%;
-            height: 100%;
-            border-radius: 50px;
-            // object-fit: cover;
+            border-radius: 15px;
+            object-fit: cover;
           }
         }
 
@@ -113,7 +128,6 @@
           @include tablet {
             transform: none !important;
             align-items: center;
-            text-align: center;
           }
 
           h2 {
@@ -124,11 +138,13 @@
             @include mobile {
               font-size: 32px;
               line-height: normal;
+              text-align: center;
             }
 
             @include tablet {
               font-size: 44px;
               line-height: normal;
+              text-align: center;
             }
           }
 
@@ -144,10 +160,6 @@
             @include tablet {
               font-size: 24px;
             }
-          }
-
-          hr {
-            width: 100%;
           }
 
           .stack {

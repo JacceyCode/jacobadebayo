@@ -58,7 +58,6 @@ const Single = ({ item }) => {
           <div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <hr />
             <div className="stack">
               <h4>Stacks used:</h4>
               <span>{item.stacks?.join(", ")}</span>
