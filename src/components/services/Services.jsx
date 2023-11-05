@@ -114,8 +114,6 @@ function Services() {
         </div>
       </motion.div>
 
-      <hr />
-
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
           <h1>

@@ -69,7 +69,7 @@ function Contact() {
           </span>
           <div>
             <h2>Location</h2>
-            <span>Remote</span>
+            <span>Lagos, Nigeria.</span>
           </div>
         </motion.div>
       </motion.div>
