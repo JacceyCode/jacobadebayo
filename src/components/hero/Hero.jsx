@@ -26,19 +26,19 @@ const textVariants = {
   },
 };
 
-// const sliderVariants = {
-//   initial: {
-//     x: 10,
-//   },
-//   animate: {
-//     x: "-90%",
-//     transition: {
-//       duration: 5,
-//       repeat: Infinity,
-//       repeatType: "mirror",
-//     },
-//   },
-// };
+const sliderVariants = {
+  initial: {
+    x: 10,
+  },
+  animate: {
+    x: "-90%",
+    transition: {
+      duration: 5,
+      repeat: Infinity,
+      repeatType: "mirror",
+    },
+  },
+};
 
 function Hero() {
   const el = useRef();
@@ -102,14 +102,14 @@ function Hero() {
         </motion.div>
       </div>
 
-      {/* <motion.div
+      <motion.div
         className="slidingTextContainer"
         variants={sliderVariants}
         initial="initial"
         animate="animate"
       >
         Frontend Developer
-      </motion.div> */}
+      </motion.div>
     </div>
   );
 }
