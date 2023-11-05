@@ -10,44 +10,25 @@
   .wrapper {
     height: 100%;
     display: flex;
-    align-items: center;
-    gap: 20px;
-
-    @include mobile {
-      flex-direction: column-reverse;
-      justify-content: start;
-    }
-
-    @include tablet {
-      flex-direction: column-reverse;
-      justify-content: start;
-      padding: 10px 0 0;
-    }
 
     .textContainer {
-      // height: 100%;
-      // width: 70%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 20px;
+      width: 100%;
+      gap: 30px;
 
       @include mobile {
-        // width: 90%;
         gap: 10px;
         text-align: center;
         height: 100%;
-        // align-items: center;
-        // justify-content: space-between;
       }
 
       @include tablet {
-        width: 100%;
         height: 100%;
-        gap: 40px;
+        gap: 20px;
         text-align: center;
-        // align-items: center;
       }
 
       h2 {
@@ -60,7 +41,6 @@
 
         @include mobile {
           font-size: 30px;
-          // padding-top: 80px;
         }
 
         @include tablet {

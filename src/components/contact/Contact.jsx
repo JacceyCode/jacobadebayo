@@ -1,8 +1,16 @@
 import { useRef } from "react";
 import "./contact.scss";
 import { motion, useInView } from "framer-motion";
-import { FaLocationDot, FaPhone } from "react-icons/fa6";
+import {
+  FaLinkedin,
+  FaLocationDot,
+  FaPhone,
+  FaSquareGithub,
+  FaSquareWhatsapp,
+  FaSquareXTwitter,
+} from "react-icons/fa6";
 import { MdOutlineMarkEmailRead } from "react-icons/md";
+import { IconContext } from "react-icons";
 
 const variants = {
   initial: {
@@ -97,7 +105,7 @@ function Contact() {
           </svg>
         </motion.div>
 
-        <motion.form
+        {/* <motion.form
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 4 }}
@@ -106,7 +114,41 @@ function Contact() {
           <input type="email" placeholder="Email" required />
           <textarea rows={10} placeholder="Message" required />
           <button>Send</button>
-        </motion.form>
+        </motion.form> */}
+
+        <motion.div
+          className="contacts"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 4 }}
+        >
+          <a href="https://twitter.com/code_sesan" target="blank">
+            <IconContext.Provider value={{ color: "#fff", size: "3rem" }}>
+              <FaSquareXTwitter />
+            </IconContext.Provider>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/jacob-oluwasesan-adebayo/"
+            target="blank"
+          >
+            <IconContext.Provider value={{ color: "#0077B5", size: "3rem" }}>
+              <FaLinkedin />
+            </IconContext.Provider>
+          </a>
+
+          <a href="http://wa.me/2348134557536" target="blank">
+            <IconContext.Provider value={{ color: "#25D366", size: "3rem" }}>
+              <FaSquareWhatsapp />
+            </IconContext.Provider>
+          </a>
+
+          <a href="https://github.com/JacceyCode" target="blank">
+            <IconContext.Provider value={{ color: "#fff", size: "3rem" }}>
+              <FaSquareGithub />
+            </IconContext.Provider>
+          </a>
+        </motion.div>
       </div>
     </motion.div>
   );

@@ -10,33 +10,34 @@
     justify-content: space-between;
     height: 100%;
     width: 100%;
-    padding: 0 20px 0 100px;
+    padding: 0 20px 0 70px;
 
     @include mobile {
-      flex-direction: column;
-      justify-content: center;
-      align-items: end;
-      gap: 10px;
-      padding: 20px;
+      padding: 0;
+    }
+    @include tablet {
+      padding: 0 0 0 50px;
     }
 
     .logo {
       display: flex;
       align-items: center;
-      gap: 20px;
+      width: 100%;
+      justify-content: space-between;
       font-weight: bold;
 
       @include mobile {
         justify-content: end;
-        width: 100%;
       }
 
       span {
-        @include mobile {
-          display: none;
-        }
+        font-family: monospace;
+        font-weight: lighter;
+        font-style: italic;
+        font-size: 3rem;
+        color: orange;
 
-        @include tablet {
+        @include mobile {
           display: none;
         }
       }
@@ -48,11 +49,6 @@
         background-color: transparent;
         color: orange;
       }
-    }
-
-    .social {
-      display: flex;
-      gap: 20px;
     }
   }
 }

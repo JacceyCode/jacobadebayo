@@ -4,23 +4,25 @@
   height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 20px;
   padding: 10px 50px;
 
   @include mobile {
     width: 100%;
     padding: 40px 0px;
-    flex-direction: column;
+    gap: 30px;
   }
 
   @include tablet {
     width: 100%;
     padding: 50px 10px;
-    flex-direction: column;
+    gap: 30px;
   }
 
   .textContainer {
-    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -70,76 +72,85 @@
   }
 
   .formContainer {
-    flex: 1;
     position: relative;
+    width: 100%;
 
     @include mobile {
-      width: 100%;
-      padding: 20px;
+      padding: 5px 0;
     }
     @include tablet {
-      width: 100%;
-      padding: 50px;
+      padding: 20px 100px;
     }
 
     .phoneSvg {
       stroke: orange;
       position: absolute;
+      left: 200px;
       margin: auto;
       z-index: -1;
 
       @include mobile {
-        left: 50px;
-        // bottom: 70px;
+        left: 10px;
         padding: 10px;
       }
-
-      @include tablet {
-        left: 200px;
-      }
     }
 
-    form {
+    .contacts {
       display: flex;
-      flex-direction: column;
-      gap: 20px;
-      width: 100%;
-      padding: 0 40px;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 5px 100px;
+      gap: 40px;
 
-      input,
-      textarea {
-        padding: 20px;
-        background-color: transparent;
-        border: 1px solid white;
-        outline: none;
-        color: white;
-        border-radius: 5px;
-
-        @include mobile {
-          padding: 10px;
-        }
+      @include mobile {
+        padding: 0;
       }
-
-      button {
-        padding: 20px;
-        border: none;
-        background-color: orange;
-        cursor: pointer;
-        font-weight: 500;
-        font-size: 30px;
-        border-radius: 10px;
-
-        @include mobile {
-          padding: 10px;
-          font-size: 16px;
-        }
-      }
-
-      button:hover {
-        color: orange;
-        background-color: transparent;
-        border: 2px solid orange;
+      @include tablet {
+        padding: 0;
       }
     }
+
+    // form {
+    //   display: flex;
+    //   flex-direction: column;
+    //   gap: 20px;
+    //   width: 100%;
+    //   padding: 0 40px;
+
+    //   input,
+    //   textarea {
+    //     padding: 20px;
+    //     background-color: transparent;
+    //     border: 1px solid white;
+    //     outline: none;
+    //     color: white;
+    //     border-radius: 5px;
+
+    //     @include mobile {
+    //       padding: 10px;
+    //     }
+    //   }
+
+    //   button {
+    //     padding: 20px;
+    //     border: none;
+    //     background-color: orange;
+    //     cursor: pointer;
+    //     font-weight: 500;
+    //     font-size: 30px;
+    //     border-radius: 10px;
+
+    //     @include mobile {
+    //       padding: 10px;
+    //       font-size: 16px;
+    //     }
+    //   }
+
+    //   button:hover {
+    //     color: orange;
+    //     background-color: transparent;
+    //     border: 2px solid orange;
+    //   }
+    // }
   }
 }
