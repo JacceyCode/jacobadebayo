@@ -73,7 +73,7 @@ function Contact() {
           whileInView={{ opacity: 0 }}
           transition={{ duration: 1, delay: 3 }}
         >
-          <svg width="370px" height="370px" viewBox="0 0 32.666 32.666">
+          <svg width="250px" height="250px" viewBox="0 0 32.666 32.666">
             <motion.path
               strokeWidth={0.2}
               fill="none"
