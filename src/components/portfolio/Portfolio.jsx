@@ -8,7 +8,7 @@ const items = [
     id: 1,
     title: "My MovieBox",
     img: "./moviebox.png",
-    desc: "Checkout the latest movie, trends and upcomings in the movie world. Explore our large movie catalogue database for your favourite movie, check the reviews and have a sneak peek of the trailer before visiting your favourite cinema.",
+    desc: "Checkout the latest trends and upcomings in the movie world. Explore our large movie catalogue for your favourite movie, check the reviews and have a sneak peek of the trailer before visiting your favourite cinema.",
     stacks: ["React", "TailwindCss", "API Integration"],
     url: "https://mymoviebox-jacceycode.netlify.app/",
   },
