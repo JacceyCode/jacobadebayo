@@ -6,7 +6,7 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: " My MovieBox",
+    title: "My MovieBox",
     img: "./moviebox.png",
     desc: "Checkout the latest movie, trends and upcomings in the movie world. Explore our large movie catalogue database for your favourite movie, check the reviews and have a sneak peek of the trailer before visiting your favourite cinema.",
     stacks: ["React", "TailwindCss", "API Integration"],
@@ -35,6 +35,14 @@ const items = [
     desc: "An app for generating inspirational quotes and sharing on social media profile.",
     stacks: ["HTML", "CSS", "JAVASCRIPT", "API Integration"],
     url: "https://jacceycode.github.io/Quote-Generator-App/",
+  },
+  {
+    id: 5,
+    title: "HelpMeOut",
+    img: "./helpmeout.png",
+    desc: "A website landing page for an online screen recorder chrome extension",
+    stacks: ["React", "TailwindCss", "React Icons"],
+    url: "https://jacceycode-helpmeout.netlify.app/",
   },
 ];
 
