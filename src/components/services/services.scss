@@ -2,19 +2,11 @@
 
 .services {
   background: linear-gradient(180deg, #0c0c1d, #111132);
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 50px 0;
   border-bottom: 2px solid gray;
-
-  @include mobile {
-    height: unset;
-  }
-  @include tablet {
-    height: unset;
-  }
 
   .textContainer {
     align-self: flex-end;
@@ -37,8 +29,9 @@
 
     hr {
       width: 500px;
+      height: 2px;
+      background: rebeccapurple;
       border: none;
-      border-top: 0.5px solid rebeccapurple;
 
       @include mobile {
         width: 300px;
@@ -60,94 +53,76 @@
 
     .title {
       display: flex;
+      flex-direction: column;
       align-items: center;
       gap: 20px;
 
       @include mobile {
-        flex-direction: column;
         padding: 0 10px;
       }
 
       @include tablet {
-        flex-direction: column;
         padding: 0 10px;
       }
 
       h1 {
-        font-size: 52px;
+        font-size: 3.25rem;
         font-weight: 100;
         font-style: italic;
         text-align: center;
 
         @include mobile {
-          font-size: 36px;
+          font-size: 2rem;
         }
         @include tablet {
-          font-size: 44px;
+          font-size: 2.5rem;
         }
       }
 
       a {
-        border-radius: 50px;
-        background-color: orange;
-        color: black;
-        border: none;
-        font-size: 24px;
+        border-radius: 10px;
+        color: orange;
+        border: 1px solid orange;
+        font-size: 1.5rem;
         font-weight: bold;
         cursor: pointer;
         padding: 10px;
-      }
-
-      a:hover {
-        background-color: transparent;
-        border: 1px solid orange;
-        color: orange;
       }
     }
   }
 
   .listContainer {
     display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
     gap: 50px;
-    padding-bottom: 20px;
+    padding: 50px 0;
 
     @include mobile {
-      flex-direction: column;
       width: 100%;
     }
     @include tablet {
-      flex-direction: column;
       width: 100%;
-    }
-
-    .box:nth-child(2) {
-      border-left: 2px solid gray;
-
-      @include mobile {
-        border: none;
-      }
-      @include tablet {
-        border: none;
-      }
     }
 
     .box {
       display: flex;
       flex-direction: column;
-      align-items: start;
+      align-items: center;
       gap: 40px;
-      width: 48%;
+      width: 100%;
       padding: 10px 20px;
 
       @include mobile {
-        align-items: center;
-        width: 100%;
+        // align-items: center;
+        // width: 100%;
         padding: 10px;
       }
 
       @include tablet {
-        align-items: center;
-        width: 100%;
+        // align-items: center;
+        // width: 100%;
         padding: 10px;
       }
 
@@ -168,12 +143,12 @@
         display: flex;
         align-items: start;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 30px;
         font-size: 42px;
         justify-content: space-between;
 
         @include mobile {
-          gap: 7px;
+          gap: 10px;
           font-size: 24px;
           width: 100%;
         }
@@ -182,7 +157,7 @@
           display: flex;
           align-items: center;
           gap: 10px;
-          padding: 5px 10px;
+          padding: 5px 15px;
           color: gray;
           border-radius: 20px;
           border-left: 2px solid gray;
@@ -226,17 +201,16 @@
 
         p {
           display: flex;
-          align-items: center;
+          align-items: start;
           gap: 20px;
           color: gray;
-          font-size: 32px;
+          font-size: 2rem;
 
           @include mobile {
-            align-items: start;
-            font-size: 24px;
+            font-size: 1rem;
           }
           @include tablet {
-            font-size: 30px;
+            font-size: 1.5rem;
           }
         }
 

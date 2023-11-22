@@ -93,22 +93,29 @@ function Services() {
           <h2>Services</h2>
           <div>
             <p>
-              <FaArrowRightLong /> Software development.
+              <FaArrowRightLong />
+              Building of responsive and scalable user interfaces for websites.
             </p>
             <p>
-              <FaArrowRightLong /> Responsive and Scalable UI.
+              <FaArrowRightLong />
+              Implementation of functional components on websites.
             </p>
             <p>
-              <FaArrowRightLong /> Optimized and Functional product.
+              <FaArrowRightLong />
+              Building of websites with great user experience.
             </p>
             <p>
-              <FaArrowRightLong /> Building of reusable components.
+              <FaArrowRightLong />
+              Optimisation of websites for good accessibility.
             </p>
             <p>
-              <FaArrowRightLong /> Problem solving and Debugging skills.
+              <FaArrowRightLong />
+              API integration for system communication with backend and other
+              external servers.
             </p>
             <p>
-              <FaArrowRightLong /> Efficient support and availability.
+              <FaArrowRightLong />
+              Excellent debugging skills and abilities for error handling.
             </p>
           </div>
         </div>

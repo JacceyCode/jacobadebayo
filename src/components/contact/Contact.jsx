@@ -117,7 +117,7 @@ function Contact() {
         </motion.form> */}
 
         <motion.div
-          className="contacts"
+          className="socials"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 4 }}
