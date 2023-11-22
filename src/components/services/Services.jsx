@@ -94,7 +94,8 @@ function Services() {
           <div>
             <p>
               <FaArrowRightLong />
-              Building of responsive and scalable user interfaces for websites.
+              Development of responsive and scalable user interfaces for
+              websites.
             </p>
             <p>
               <FaArrowRightLong />
@@ -102,7 +103,7 @@ function Services() {
             </p>
             <p>
               <FaArrowRightLong />
-              Building of websites with great user experience.
+              Development of websites with great user experience.
             </p>
             <p>
               <FaArrowRightLong />

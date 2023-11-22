@@ -120,7 +120,7 @@
 
     .socials {
       display: flex;
-      justify-content: start;
+      justify-content: center;
       align-items: center;
       padding: 5px 100px;
       gap: 2.5rem;
@@ -133,6 +133,7 @@
       @include tablet {
         padding: 0;
         gap: 2rem;
+        justify-content: start;
       }
     }
 
