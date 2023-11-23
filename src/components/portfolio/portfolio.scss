@@ -7,19 +7,19 @@
     position: sticky;
     top: 0;
     left: 0;
-    padding-top: 20px;
+    padding-top: 10px;
     text-align: center;
     color: orange;
-    font-size: 36px;
+    font-size: 2rem;
 
     @include mobile {
       padding-top: 15px;
-      font-size: 22px;
+      font-size: 1rem;
     }
 
     @include tablet {
       padding-top: 30px;
-      font-size: 24px;
+      font-size: 1.5rem;
     }
 
     h1 {
@@ -29,7 +29,7 @@
     }
 
     .progressBar {
-      height: 10px;
+      height: 5px;
       background-color: #fff;
 
       @include mobile {
@@ -52,7 +52,7 @@
       justify-content: center;
       align-items: center;
       width: 100%;
-      overflow: hidden;
+      // overflow: hidden;
       margin: 80px 0;
 
       @include mobile {
@@ -72,22 +72,16 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 20px;
         background-color: #111132;
         border-radius: 20px;
-        padding: 30px;
+        padding: 20px;
 
         @include mobile {
           width: 100%;
-          flex-direction: column;
-          gap: 0px;
-          padding: 20px;
         }
 
         @include tablet {
           width: 80%;
-          flex-direction: column;
-          gap: 0px;
         }
 
         .imageContainer {
@@ -127,7 +121,6 @@
 
           h2 {
             font-size: 50px;
-            // line-height: 60px;
             padding: 30px 0 0;
 
             @include mobile {
