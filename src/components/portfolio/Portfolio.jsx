@@ -34,7 +34,7 @@ const items = [
     img: "./pizza.png",
     desc: "A website built for pizza lover's to make order, manage delivery and make payment from the comfort of their home. This helps to increase the order per hour and improve the sales number at least by 40%.",
     stacks: ["React", "Redux", "TailwindCss"],
-    url: "https://mymoviebox-jacceycode.netlify.app/",
+    url: "https://orderfastpizza.netlify.app/",
   },
   {
     id: 5,
@@ -76,7 +76,7 @@ const Single = ({ item }) => {
       <div className="container">
         <div className="wrapper">
           <div className="imageContainer" ref={ref}>
-            <img src={item.img} alt="image" />
+            <img src={item.img} alt="image" loading="lazy" />
           </div>
 
           <div className="textContainer" style={{ y }}>
