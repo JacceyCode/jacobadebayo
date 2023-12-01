@@ -52,14 +52,14 @@ const items = [
     stacks: ["HTML", "CSS", "JAVASCRIPT", "API Integration"],
     url: "https://jacceycode.github.io/Quote-Generator-App/",
   },
-  {
-    id: 7,
-    title: "Image Gallery",
-    img: "./drag&drop.png",
-    desc: "You want to experience a gallery that gives you access to order your pictures like you always wanted or immediately search out your party or hangout pictures? Give this a try today.",
-    stacks: ["React", "TailwindCss", "Drag&Drop", "Supabase"],
-    url: "https://myimageagallery.netlify.app/",
-  },
+  // {
+  //   id: 7,
+  //   title: "Image Gallery",
+  //   img: "./drag&drop.png",
+  //   desc: "You want to experience a gallery that gives you access to order your pictures like you always wanted or immediately search out your party or hangout pictures? Give this a try today.",
+  //   stacks: ["React", "TailwindCss", "Drag&Drop", "Supabase"],
+  //   url: "https://myimageagallery.netlify.app/",
+  // },
 ];
 
 const Single = ({ item }) => {

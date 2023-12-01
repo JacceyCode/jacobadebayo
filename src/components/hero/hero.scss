@@ -5,7 +5,7 @@
   overflow: hidden;
   background: linear-gradient(180deg, #0c0c1d, #111132);
   position: relative;
-  border-bottom: 2px solid gray;
+  // border-bottom: 2px solid orange;
 
   .wrapper {
     height: 100%;
@@ -52,6 +52,8 @@
         span {
           font-size: 70px;
           color: #219ebc;
+          // color: orange;
+          // opacity: 0.8;
           font-style: italic;
           font-family: monospace;
           font-weight: 500;

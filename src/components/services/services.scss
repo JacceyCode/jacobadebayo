@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 50px 0;
-  border-bottom: 2px solid gray;
+  // border-bottom: 2px solid gray;
 
   .textContainer {
     align-self: flex-end;
@@ -30,7 +30,8 @@
     hr {
       width: 500px;
       height: 2px;
-      background: rebeccapurple;
+      // background: rebeccapurple;
+      background: orange;
       border: none;
 
       @include mobile {

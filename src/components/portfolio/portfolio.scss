@@ -30,7 +30,9 @@
 
     .progressBar {
       height: 5px;
-      background-color: #fff;
+      // background-color: #fff;
+      background-color: orange;
+      opacity: 0.8;
 
       @include mobile {
         height: 2px;
