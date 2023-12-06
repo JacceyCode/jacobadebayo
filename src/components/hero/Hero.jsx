@@ -87,10 +87,11 @@ function Hero() {
           </motion.h1>
 
           <motion.div className="about" variants={textVariants}>
-            An experienced frontend developer with excellent skills in
-            developing ideas into a functional, responsive and design-detailed
-            websites. <br /> With genuine passion and dedication to my craft, I
-            build user interfaces with seamless navigation and functiionality.
+            A talented and experienced frontend developer with excellent skills
+            in developing ideas into a functional, responsive and
+            design-detailed websites. <br /> With genuine passion and dedication
+            to my craft, I build user interfaces with seamless navigation and
+            functionality.
           </motion.div>
 
           <motion.img
