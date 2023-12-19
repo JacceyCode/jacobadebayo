@@ -18,7 +18,7 @@ function Navbar() {
             JOA
           </motion.span>
 
-          <a href="Jacob Oluwasesan Adebayo Resume.pdf" download>
+          <a href="Jacob Adebayo Resume.pdf" download>
             Download Resume
           </a>
         </div>

@@ -11,6 +11,7 @@ import {
   FaSass,
 } from "react-icons/fa6";
 import {
+  BiLogoTypescript,
   BiLogoJavascript,
   BiLogoRedux,
   BiLogoTailwindCss,
@@ -75,7 +76,13 @@ function Services() {
               <BiLogoJavascript /> JavaScript
             </li>
             <li>
+              <BiLogoTypescript /> TypeScript
+            </li>
+            <li>
               <FaReact /> React
+            </li>
+            <li>
+              <FaReact /> React Native
             </li>
             <li>
               <BiLogoRedux /> Redux
@@ -94,16 +101,16 @@ function Services() {
           <div>
             <p>
               <FaArrowRightLong />
-              Development of responsive and scalable user interfaces for
-              websites.
+              Development of responsive and scalable products with great user
+              experience.
             </p>
             <p>
               <FaArrowRightLong />
-              Implementation of functional components on websites.
+              Development of mobile apps for both Android and IOS.
             </p>
             <p>
               <FaArrowRightLong />
-              Development of websites with great user experience.
+              Ability to implement functional and reusable components.
             </p>
             <p>
               <FaArrowRightLong />

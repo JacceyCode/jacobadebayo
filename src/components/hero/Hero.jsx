@@ -49,6 +49,7 @@ function Hero() {
         "Frontend Developer...",
         "Web Developer...",
         "Software Developer...",
+        "Mobile Developer...",
       ],
       startDelay: 500,
       typeSpeed: 50,
@@ -87,11 +88,14 @@ function Hero() {
           </motion.h1>
 
           <motion.div className="about" variants={textVariants}>
-            A talented and experienced frontend developer with excellent skills
-            in developing ideas into a functional, responsive and
-            design-detailed websites. <br /> With genuine passion and dedication
-            to my craft, I build user interfaces with seamless navigation and
-            functionality.
+            A talented and experienced frontend & mobile(IOS & Android)
+            developer with excellent skills in developing ideas into a
+            functional, responsive and optimum performance products.
+            <br /> I am well-versed in modern day technologies like JavaScript,
+            TypeScript, React, React Native, TailwindCss, SCSS for building
+            functional and accessible products with great user experience and
+            with genuine passion and dedication to my craft, I build user
+            interfaces with seamless navigation.
           </motion.div>
 
           <motion.img
