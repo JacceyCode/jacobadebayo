@@ -90,12 +90,11 @@ function Hero() {
           <motion.div className="about" variants={textVariants}>
             A talented and experienced frontend & mobile(IOS & Android)
             developer with excellent skills in developing ideas into a
-            functional, responsive and optimum performance products.
-            <br /> I am well-versed in modern day technologies like JavaScript,
-            TypeScript, React, React Native, TailwindCss, SCSS for building
+            functional, responsive, scalable and optimum performance products.
+            <br /> I am well-versed in modern technologies like JavaScript,
+            TypeScript, React, React Native, TailwindCss, SCSS, for building
             functional and accessible products with great user experience and
-            with genuine passion and dedication to my craft, I build user
-            interfaces with seamless navigation.
+            seamless navigation.
           </motion.div>
 
           <motion.img
