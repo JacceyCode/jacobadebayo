@@ -46,15 +46,14 @@ function Hero() {
   useEffect(() => {
     var typed = new Typed(el.current, {
       strings: [
-        "Frontend Developer...",
-        "Web Developer...",
         "Software Developer...",
-        "Mobile Developer...",
+        "Frontend Developer...",
+        "Mobile App Developer...",
       ],
       startDelay: 500,
-      typeSpeed: 50,
-      backSpeed: 100,
-      backDelay: 100,
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 300,
       smartBackspace: true,
       loop: true,
       showCursor: true,
@@ -88,10 +87,11 @@ function Hero() {
           </motion.h1>
 
           <motion.div className="about" variants={textVariants}>
-            A talented and experienced frontend & mobile(IOS & Android)
-            developer with excellent skills in developing ideas into a
-            functional, responsive, scalable and optimum performance products.
-            <br /> I am well-versed in modern technologies like JavaScript,
+            A seasoned developer specialized in frontend and mobile platforms,
+            skilled at translating creative concepts into carefully crafted,
+            responsive websites, and feature-rich applications for both Android
+            and iOS platforms.
+            <br /> I enjoy working with modern technologies like JavaScript,
             TypeScript, React, React Native, TailwindCss, SCSS, for building
             functional and accessible products with great user experience and
             seamless navigation.

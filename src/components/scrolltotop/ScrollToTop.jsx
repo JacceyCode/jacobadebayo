@@ -1,28 +1,14 @@
-import "./scrolltotup.scss";
-import { useEffect, useState } from "react";
-import { FaArrowUpLong } from "react-icons/fa6";
+import { useEffect } from "react";
 
-function ScrollToTop() {
-  const [showTopBtn, setShowTopBtn] = useState(false);
-
+const ScrollToTop = () => {
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      window.scrollY > 1200 ? setShowTopBtn(true) : setShowTopBtn(false);
-    });
-  }, []);
-
-  const goToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
-  };
+  }, []);
 
-  return (
-    <div className="scrollup">
-      {showTopBtn && <FaArrowUpLong className="upIcon" onClick={goToTop} />}
-    </div>
-  );
-}
+  return null;
+};
 
 export default ScrollToTop;

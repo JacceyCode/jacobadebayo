@@ -101,29 +101,32 @@ function Services() {
           <div>
             <p>
               <FaArrowRightLong />
-              Development of responsive and scalable products with great user
-              experience.
+              Creating websites that are both responsive and scalable, ensuring
+              an exceptional user experience.
             </p>
             <p>
               <FaArrowRightLong />
-              Development of mobile apps for both Android and IOS.
+              Building of mobile applications for both Android and iOS
+              platforms.
             </p>
             <p>
               <FaArrowRightLong />
-              Ability to implement functional and reusable components.
+              Proficient in implementing functional and reusable components.
             </p>
             <p>
               <FaArrowRightLong />
-              Optimisation of websites for good accessibility.
+              Enhancing website accessibility through optimization for improved
+              performance.
             </p>
             <p>
               <FaArrowRightLong />
-              API integration for system communication with backend and other
-              external servers.
+              Integrating APIs to facilitate seamless communication between the
+              system, backend, and external servers.
             </p>
             <p>
               <FaArrowRightLong />
-              Excellent debugging skills and abilities for error handling.
+              Demonstrates exceptional skills in debugging and proper error
+              handling.
             </p>
           </div>
         </div>

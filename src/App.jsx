@@ -6,6 +6,7 @@ import Navbar from "./components/navbar/Navbar";
 // import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
 import ScrollToTop from "./components/scrolltotop/ScrollToTop";
+import ScrollToTopBtn from "./components/scrolltotop/ScrollToTopBtn";
 import Services from "./components/services/Services";
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
       <Cursor />
 
       <ScrollToTop />
+
+      <ScrollToTopBtn />
 
       <section id="Homepage">
         <Navbar />
