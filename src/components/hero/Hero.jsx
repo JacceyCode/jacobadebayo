@@ -48,7 +48,7 @@ function Hero() {
       strings: [
         "Software Developer...",
         "Frontend Developer...",
-        "Mobile App Developer...",
+        "Mobile Developer...",
       ],
       startDelay: 500,
       typeSpeed: 100,
